@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:text="@string/step_by_step_choose_itinerary_alarm"
+        android:id="@+id/textView2"
+        android:padding="10dp" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmTimePicker"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/step_by_step_choose_itinerary_alarm_label"
+            android:id="@+id/labelDescription"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelAlarm"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/labelDescription"
+            android:layout_alignParentLeft="true"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/step_by_step_choose_itinerary_alarm_repetition"
+            android:id="@+id/repetitionLabel"
+            android:textStyle="bold"
+            android:layout_below="@+id/labelDescription"
+            android:layout_alignLeft="@+id/labelDescription"
+            android:layout_marginTop="65dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_monday"
+            android:id="@+id/checkBoxMonday"
+            android:layout_below="@+id/repetitionLabel"
+            android:layout_alignLeft="@+id/repetitionLabel"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_tuesday"
+            android:id="@+id/checkBoxTuesday"
+            android:layout_below="@+id/repetitionLabel"
+            android:layout_toRightOf="@+id/checkBoxMonday"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_wednesday"
+            android:id="@+id/checkBoxWednesday"
+            android:checked="false"
+            android:layout_below="@+id/repetitionLabel"
+            android:layout_toRightOf="@+id/checkBoxTuesday" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_thursday"
+            android:id="@+id/checkBoxThursday"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBoxWednesday"
+            android:layout_toRightOf="@+id/checkBoxWednesday" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_friday"
+            android:id="@+id/checkBoxFriday"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBoxThursday"
+            android:layout_toRightOf="@+id/checkBoxThursday" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_saturday"
+            android:id="@+id/checkBoxSaturday"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBoxFriday"
+            android:layout_toRightOf="@+id/checkBoxFriday" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_sunday"
+            android:id="@+id/checkBoxSunday"
+            android:checked="false"
+            android:layout_alignTop="@+id/checkBoxSaturday"
+            android:layout_toRightOf="@+id/checkBoxSaturday" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+            android:id="@+id/btnCancelAlarm"
+            android:layout_below="@+id/checkBoxSunday"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok"
+            android:id="@+id/btnOkAlarm"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/btnCancelAlarm"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+</LinearLayout>

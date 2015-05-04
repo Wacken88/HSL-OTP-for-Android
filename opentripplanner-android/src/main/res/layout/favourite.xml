@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:padding="10dp"
+            android:text="@string/favourite_Address_title" android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sysBlack">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonFavBack"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="@color/sysBlack"
+            android:paddingEnd="10dp" />
+
+        <EditText android:id="@+id/favFilter" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:ems="10"
+            android:textColor="@color/sysWhite"
+            android:textCursorDrawable="@null"
+            android:enabled="true">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <ListView android:id="@+id/favListView" android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:scrollingCache="false" />
+
+    </LinearLayout>
+
